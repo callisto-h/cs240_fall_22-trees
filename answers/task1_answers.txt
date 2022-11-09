@@ -1,0 +1,68 @@
+1. The best tree will look like this:
+
+               ┌─┐
+               │D│
+      ┌────────┴─┴──────────┐
+      │                     │
+     ┌▼┐                   ┌▼┐
+     │B│                   │F│
+ ┌───┴─┴──┐            ┌───┴─┴────┐
+ │        │            │          │
+ │        │            │          │
+┌▼┐      ┌▼┐          ┌▼┐        ┌▼┐
+│A│      │C│          │E│        │G│
+└─┘      └─┘          └─┘        └─┘
+
+so inputs would need to occur in the following order(s):
+    1. [D]
+    2. [B, F]
+    3. [A, C, E, G]
+
+that is to say, both [D, B, F, A, C, E, G] and [D, F, B, G, C, A, E]
+are valid. Why?
+
+2. The worst tree will be a straight line, or a "tree" where every node
+   has only one child.
+
+[A, B, C, D, E, F, G]                       [A, G, B, F, C, E, D]
+
+        ┌─┐                                 ┌─┐
+        │A│                                 │A│
+        └─┴─┐                               └─┴─────────────────────────┐
+            │                                                           │
+           ┌▼┐                                                         ┌▼┐
+           │B│                                                         │G│
+           └─┴─┐                                ┌──────────────────────┴─┘
+               │                                │
+              ┌▼┐                              ┌▼┐
+              │C│                              │B│
+              └─┴─┐                            └─┴──────────────────┬┐
+                  │                                                 │▼┐
+                 ┌▼┐                                                │F│
+                 │D│                               ┌────────────────┴─┘
+                 └─┴─┐                             │
+                     │                             │
+                    ┌▼┐                           ┌▼┐
+                    │E│                           │C│
+                    └─┴─┐                         └─┴─────────────┐
+                        │                                         │
+                       ┌▼┐                                       ┌▼┐
+                       │F│                                       │E│
+                       └─┴─┐                           ┌─────────┴─┘
+                           │                           │
+                          ┌▼┐                         ┌▼┐
+                          │G│                         │D│
+                          └─┘                         └─┘
+
+there are more input orders which would make terrible trees. What would they be?
+What would the trees look like? What about the tree shape makes it "terrible"?
+
+3. A perfect tree is one where all levels of the tree are completely filled.
+
+4. A complete tree is one where all but the bottom level of the tree are completely
+   filled, and the last level is filled from left to right. 
+
+5. A full tree is one where all the nodes of the tree have either 2 or 0 children
+
+6. A balanced tree is one where the left and right subtrees of ALL nodes have 
+   heights that differ by at most 1

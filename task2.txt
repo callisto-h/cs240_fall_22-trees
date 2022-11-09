@@ -1,0 +1,31 @@
+Given the following tree:
+
+       ┌─┐
+       │B│
+ ┌─────┴─┴───────────────┐
+ │                       │
+┌▼┐                     ┌▼┐
+│A│                     │G│
+└─┘                  ┌──┴─┴──┐
+                     │       │
+                    ┌▼┐     ┌▼┐
+                    │F│     │H│
+            ┌───────┴─┘     └─┘
+            │
+           ┌▼┐
+           │C│
+           └─┴─┐
+               │
+              ┌▼┐
+              │D│
+              └─┴─┐
+                  │
+                 ┌▼┐
+                 │E│
+                 └─┘
+
+Provide the following:
+
+Pre-order visitation (NLR)
+In-order visitation (LNR) is there anything special about this one?
+Post-order visitation (LRN)

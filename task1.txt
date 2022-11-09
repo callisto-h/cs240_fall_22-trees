@@ -1,0 +1,19 @@
+Here are your values to build the following trees with:
+[A, B, C, D, E, F, G]
+
+1. What order of inserting these values into a tree
+   makes the BEST shaped tree?
+
+2. What order of inserting these values into a tree
+   makes the WORST shaped tree?
+
+Using any number of elements from the previous list,
+provide the following:
+
+3. A perfect tree
+
+4. A complete tree
+
+5. A full tree
+
+6. A balanced tree
